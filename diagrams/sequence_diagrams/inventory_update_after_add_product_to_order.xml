@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SequenceDiagram name="InventoryUpdateAfterAddProductToOrder" version="1.0.0">
+    <Participants>
+        <Participant id="1" name="User"/>
+        <Participant id="2" name="AuthSystem"/>
+        <Participant id="3" name="Product"/>
+        <Participant id="4" name="Order"/>
+    </Participants>
+    <!-- Login User -->
+    <Message id="1" from="1" to="2" name="Login User"/>
+    <!-- List Products -->
+    <Message id="2" from="1" to="3" name="List Products"/>
+    <!-- Create Order -->
+    <Message id="3" from="1" to="4" name="Create Order"/>
+    <!-- Create Order -->
+    <Message id="4" from="1" to="3" name="Update Inventory"/>
+</SequenceDiagram>

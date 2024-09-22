@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SequenceDiagram name="AddNewProduct" version="1.0.0">
+    <Participants>
+        <Participant id="1" name="User"/>
+        <Participant id="2" name="AuthSystem"/>
+        <Participant id="3" name="Product"/>
+    </Participants>
+    <!-- Login User -->
+    <Message id="1" from="1" to="2" name="Login User"/>
+    <!-- Add Product -->
+    <Message id="2" from="1" to="3" name="Add Product"/>
+    <!-- List Products -->
+    <Message id="3" from="1" to="3" name="List Products"/>
+</SequenceDiagram>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SequenceDiagram name="LoginUser" version="1.0.0">
+    <Participants>
+        <Participant id="1" name="User"/>
+        <Participant id="2" name="AuthSystem"/>
+    </Participants>
+    <!-- Register User -->
+    <Message id="1" from="1" to="2" name="Register User"/>
+    <!-- Login User -->
+    <Message id="2" from="1" to="2" name="Login User"/>
+</SequenceDiagram>

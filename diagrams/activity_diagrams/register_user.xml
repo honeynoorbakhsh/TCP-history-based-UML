@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ActivityDiagram name="RegisterUser" version="1.1.0">
+    <Activities>
+        <Activity id="1" name="Start"/>
+        <Activity id="2" name="Check If User Exists"/>
+        <Activity id="3" name="KYC User"/>
+        <Activity id="4" name="Create User"/>
+        <Activity id="5" name="Send Confirmation Email"/>
+        <EndNode id="6" name="End"/>
+    </Activities>
+    <Flows>
+        <Flow from="1" to="2" path_weight="2"/>
+        <Flow from="2" to="3" path_weight="1"/>
+        <Flow from="2" to="6" path_weight="1"/>
+        <Flow from="3" to="4" path_weight="1"/>
+        <Flow from="4" to="5" path_weight="1"/>
+        <Flow from="5" to="6" path_weight="1"/>
+    </Flows>
+</ActivityDiagram>
+
+<!--<ActivityDiagram name="RegisterUser" version="1.0.0">-->
+<!--    <Activities>-->
+<!--        <Activity id="1" name="Start"/>-->
+<!--        <Activity id="2" name="Check If User Exists"/>-->
+<!--        <Activity id="3" name="Create User"/>-->
+<!--        <Activity id="4" name="Send Confirmation Email"/>-->
+<!--        <EndNode id="5" name="End"/>-->
+<!--    </Activities>-->
+<!--    <Flows>-->
+<!--        <Flow from="1" to="2" path_weight="1"/>-->
+<!--        <Flow from="2" to="3" path_weight="1"/>-->
+<!--        <Flow from="3" to="4" path_weight="1"/>-->
+<!--        <Flow from="4" to="5" path_weight="1"/>-->
+<!--    </Flows>-->
+<!--</ActivityDiagram>-->
